@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Task Management/title>
+        <!-- This PRoject is for simple CRUD operations Exmample-->
+         <!-- 1.Here we are taking two inputs.
+                2. Adding that input in  Existing array
+                3. Whiling adding input adding two button in DOM Inner HTML
+                4. on edit Shuffling the Status from Pending to complete and Complete to pending
+                5. On Delete deleteing that Entire Task
+                6. And Everytime Shwoing(rendering) changes on Web Page-->
+                
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-4 text-center mb-5">Task Management</h1>
+    </div>
+
+    <div class="container w-50">
+        <div class="mb-3">
+            <label for="tasktitleinput" class="form-label">Task Title</label>
+            <input type="text" class="form-control" id="tasktitleinput">
+        </div>
+        <div class="mb-3">
+            <label for="taskdisciptioninput" class="form-label">Task Discription</label>
+            <input type="text" class="form-control" id="taskdisciptioninput">
+        </div>
+        <div class="mb-3">
+            <button class="btn btn-primary btn-lg me-3 w-100" onclick="addnewtask()">Add New Task</button>
+        </div>
+
+        <div class="mb-3">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Sr.no</th>
+                        <th>Title</th>
+                        <th>Discription</th>
+                        <th>Status</th>
+                        <th style="text-align:center"> Actions</th>
+                    </tr>
+                   
+                </thead>
+                <tbody id="rendertask">
+                    <tr>
+                        
+                    </tr>
+
+                </tbody>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
